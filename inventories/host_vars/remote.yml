@@ -1,5 +1,7 @@
-ansible_host: 192.168.1.XXX
+ansible_host: 192.168.2.42
+mask: 24
+gateway: 192.168.2.1
 
-target_device: /dev/nvme0n1
-target_boot_part: /dev/nvme0n1p1
-target_root_part: /dev/nvme0n1p2
+target_device: /dev/sda
+target_boot_part: /dev/sda1
+target_root_part: /dev/sda2

@@ -54,9 +54,9 @@ FILES=()
 ##   NOTE: If you have /usr on a separate partition, you MUST include the
 #    usr and fsck hooks.
 {% if keymap is defined and keymap != 'us' %}
-HOOKS=(base udev keyboard autodetect modconf block filesystems keymap encrypt fsck)
+HOOKS=(base udev keyboard autodetect modconf block filesystems keymap fsck)
 {% else %}
-HOOKS=(base udev keyboard autodetect modconf block filesystems encrypt fsck)
+HOOKS=(base udev keyboard autodetect modconf block filesystems fsck)
 {% endif %}
 
 # COMPRESSION

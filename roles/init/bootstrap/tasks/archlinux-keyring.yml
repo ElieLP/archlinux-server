@@ -2,3 +2,4 @@
   community.general.pacman:
     name: archlinux-keyring
     update_cache: true
+  ignore_errors: "{{ ansible_check_mode }}"

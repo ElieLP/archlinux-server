@@ -1,0 +1,7 @@
+galaxy_info:
+  min_ansible_version: '2.9'
+  author: Elie LP
+  description: Install zsh
+  license: MIT
+  platforms:
+    - name: ArchLinux

@@ -4,6 +4,10 @@
 - name: Include create-partitions.yml
   ansible.builtin.include_tasks: create-partitions.yml
 
+- name: Include create-LUKS.yml
+  ansible.builtin.include_tasks: create-LUKS.yml
+  when: crypt_passphrase
+
 - name: Include format-partitions.yml
   ansible.builtin.include_tasks: format-partitions.yml
 

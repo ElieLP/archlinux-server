@@ -1,5 +1,0 @@
-- name: Install sound packages
-  become: true
-  community.general.pacman:
-    name:
-      - pulseaudio

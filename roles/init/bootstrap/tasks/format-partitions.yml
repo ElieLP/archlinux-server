@@ -7,4 +7,5 @@
 - name: Create a ext4 filesystem on root partition
   community.general.filesystem:
     fstype: ext4
-    dev: /dev/mapper/root
+    dev: "{{ target_root_part }}"
+  ignore_errors: "{{ ansible_check_mode }}"

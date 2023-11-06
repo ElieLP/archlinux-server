@@ -1,6 +1,6 @@
 - name: Mount root partition
   ansible.posix.mount:
-    src: /dev/mapper/root
+    src: '{{ target_root_part }}'
     path: /mnt
     fstype: ext4
     state: mounted
